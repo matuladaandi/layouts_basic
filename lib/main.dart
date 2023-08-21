@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Time Tricer',
       theme: ThemeData(primarySwatch: Colors.indigo),
-      home: SignInPage(),
+      home: SignInPage(), // file complete app/sign_in/sign_in_page.dart
     );
   }
 }

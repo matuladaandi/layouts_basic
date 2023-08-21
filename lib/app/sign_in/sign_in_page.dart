@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:layout_basic/app/sign_in/sign_in_button.dart';
 
 class SignInPage extends StatelessWidget {
   @override
@@ -35,26 +36,55 @@ class _BuildContent extends StatelessWidget {
             ),
           ),
           const SizedBox(
+            height: 48.0,
+          ),
+          const SizedBox(
             height: 8.0,
           ),
-          ElevatedButton(
+          SignInButton(
             onPressed: () {},
-            child: Text(
-              'Sign in with Google',
-              style: TextStyle(fontSize: 14.0),
-            ),
-            style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all(
-                const Color.fromARGB(255, 27, 148, 247),
-              ),
-              shape: MaterialStateProperty.all(
-                const RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(4.0),
-                  ),
-                ),
-              ),
-            ),
+            text: 'Sign in with Google',
+            color: Colors.white,
+            textColor: Colors.black87,
+            height: 55.0,
+          ),
+          const SizedBox(
+            height: 8.0,
+          ),
+          SignInButton(
+            onPressed: () {},
+            text: 'Sign in with Facebook',
+            color: const Color(0xFF334D92),
+            textColor: Colors.white,
+            height: 55.0,
+          ),
+          const SizedBox(
+            height: 8.0,
+          ),
+          SignInButton(
+            onPressed: () {},
+            text: 'Sign in with Email',
+            color: Colors.teal.shade700,
+            textColor: Colors.white,
+            height: 55.0,
+          ),
+          const SizedBox(
+            height: 8.0,
+          ),
+          const Text(
+            'or',
+            style: TextStyle(fontSize: 15.0, color: Colors.black87),
+            textAlign: TextAlign.center,
+          ),
+          const SizedBox(
+            height: 8.0,
+          ),
+          SignInButton(
+            onPressed: () {},
+            text: 'Go Anonymous',
+            color: Colors.lime.shade300,
+            textColor: Colors.black,
+            height: 55.0,
           ),
         ],
       ),
