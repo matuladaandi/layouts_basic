@@ -77,7 +77,9 @@ class _BuildContent extends StatelessWidget {
             style: TextStyle(fontSize: 15.0, color: Colors.black87),
             textAlign: TextAlign.center,
           ),
-    
+          const SizedBox(
+            height: 8.0,
+          ),
           SignInButton(
             onPressed: () {},
             text: 'Go Anonymous',
