@@ -2,26 +2,31 @@ import 'package:flutter/material.dart';
 
 class CustomeElevatedButton extends StatelessWidget {
   // constructor
-  CustomeElevatedButton(
-      {required this.child,
-      this.height = 55.0,
-  // kedua tambahkan disini propertynya
-      required this.color,
-      this.borderRadius = 0.0,
-      required this.onPressed});
+  const CustomeElevatedButton({
+    Key? key,
+    required this.child,
+    this.height = 55.0,
+    // kedua tambahkan disini propertynya
+    required this.color,
+    // this.textColor,
+    this.borderRadius = 0.0,
+    required this.onPressed,
+  }) : super(key: key);
 
   final double borderRadius;
   final Widget child;
   final Color color;
+  // final Color? textColor;
   final VoidCallback onPressed;
   final double height;
+
   // pertama tambahkan disini propertynya
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       // custom ElevatedButton
-  // ketiga tambahkan disini propertynya
+      // ketiga tambahkan disini propertynya
       height: height,
       child: ElevatedButton(
         onPressed: onPressed,

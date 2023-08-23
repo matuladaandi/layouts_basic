@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:layout_basic/app/sign_in/sign_in_button.dart';
+import 'package:layout_basic/app/sign_in/social_sign_in_button.dart';
 
 class SignInPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Time Tracker'),
+        title: const Text('Time Tracker 2'),
         centerTitle: true,
         elevation: 2.0,
       ),
@@ -38,10 +39,8 @@ class _BuildContent extends StatelessWidget {
           const SizedBox(
             height: 48.0,
           ),
-          const SizedBox(
-            height: 8.0,
-          ),
-          SignInButton(
+          SocialSignInButton(
+            assetName: 'images/logo google.png',
             onPressed: () {},
             text: 'Sign in with Google',
             color: Colors.white,
@@ -51,7 +50,8 @@ class _BuildContent extends StatelessWidget {
           const SizedBox(
             height: 8.0,
           ),
-          SignInButton(
+          SocialSignInButton(
+            assetName: 'images/logo fb.png',
             onPressed: () {},
             text: 'Sign in with Facebook',
             color: const Color(0xFF334D92),
@@ -61,7 +61,8 @@ class _BuildContent extends StatelessWidget {
           const SizedBox(
             height: 8.0,
           ),
-          SignInButton(
+          SocialSignInButton(
+            assetName: 'images/logo email.png',
             onPressed: () {},
             text: 'Sign in with Email',
             color: Colors.teal.shade700,
@@ -76,9 +77,7 @@ class _BuildContent extends StatelessWidget {
             style: TextStyle(fontSize: 15.0, color: Colors.black87),
             textAlign: TextAlign.center,
           ),
-          const SizedBox(
-            height: 8.0,
-          ),
+    
           SignInButton(
             onPressed: () {},
             text: 'Go Anonymous',
